@@ -124,7 +124,7 @@ New York and Los Angeles accounted for **69.39%** of the five-year customs value
 
 1. Use the prepared dataset in data/DataWeb-Query-Export.csv, or download the original monthly U.S. Imports for Consumption data from USITC DataWeb using the four HTS codes listed above.
 2. Create a fresh SQLite database and run `sql/01_create_tables.sql`.
-3. Remove the export's Sheet 1 of introductory material entirely, then import the CSV data into `raw_imports` using DBeaver. The grand-total summary row remains in staging and is excluded from the normalized tables.
+3. Import the CSV data into `raw_imports` using DBeaver. The grand-total summary row remains in staging and is excluded from the normalized tables.
 4. Run `sql/02_load_data.sql`, followed by `sql/03_validate_data.sql` and `sql/04_analysis.sql`.
 
 ## Limitations
